@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main class="main">
+      <article class="main__content">
+        <!-- Sign-up form start -->
+        <h4 class="title">Stay updated!</h4>
+        <p class="text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="benefits">
+          <li class="benefit__item">
+            <img src="assets/images/icon-list.svg" alt="icon_list" />
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li class="benefit__item">
+            <img src="assets/images/icon-list.svg" alt="icon_list" />
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li class="benefit__item">
+            <img src="assets/images/icon-list.svg" alt="icon_list" />
+            <span>And much more!</span>
+          </li>
+        </ul>
+
+        <form class="form">
+          <div class="form__input">
+            <div>
+              <label for="email">Email address</label>
+              <span class="error">Valid email required</span>
+            </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com "
+            />
+          </div>
+          <button type="submit">
+            <span></span>
+            <p>Subscribe to monthly newsletter</p>
+          </button>
+        </form>
+
+        <!-- Sign-up form end -->
+
+        <!-- Success message start -->
+
+        <!--  -->
+
+        <!-- Success message end -->
+      </article>
+      <section class="main__illustration">
+        <div class="illustration">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="/assets/images/illustration-sign-up-mobile.svg"
+              alt="bg"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <div class="success">
+      <div class="success__content">
+        <div class="success__text">
+          <div class="success__image">
+            <img src="assets/images/icon-success.svg" alt="icon" />
+          </div>
+          <h4 class="title">Thanks for subscribing!</h4>
+          <p class="text">
+            A confirmation email has been sent to
+            <span class="show__mail"></span>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+        </div>
+        <button class="btn__close">
+          <span></span>
+          <p>Dismiss message</p>
+        </button>
+      </div>
+    </div>
+
+    <!--   <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
